@@ -1,1 +1,218 @@
-안녕하세요
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>온라인몰개발팀 경력 기술서 – 웰컴/이벤트/마이페이지</title>
+  <meta name="description" content="온라인몰개발팀(종이책 전시) – 웰컴/이벤트/마이페이지: 바로펀딩, 전시 서비스 운영/최적화, 이벤트/프로모션, 마이페이지 고도화 경력 정리" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #111318;
+      --muted: #9aa3af;
+      --text: #e6e9ef;
+      --brand: #61dafb; /* subtle teal */
+      --accent: #9b87f5; /* soft purple */
+      --chip: #1a1d24;
+      --stroke: #1f242c;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: linear-gradient(180deg, #0b0c10, #0a0b0f 40%, #0b0c10);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 48px auto 96px;
+      padding: 0 20px;
+    }
+    header {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .eyebrow {
+      color: var(--brand);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    h1 { font-size: 32px; line-height: 1.2; margin: 0; }
+    .subtitle { color: var(--muted); font-size: 15px; }
+
+    .grid { display: grid; gap: 18px; }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .card {
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(97,218,251,0.06), transparent),
+                  radial-gradient(1000px 500px at 110% 10%, rgba(155,135,245,0.08), transparent),
+                  var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 22px 22px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    }
+    .card h2 { font-size: 20px; margin: 0 0 6px; }
+    .period { color: var(--muted); font-size: 13px; }
+
+    .kpis { margin: 14px 0 8px; padding: 0; list-style: none; }
+    .kpis li { margin: 8px 0; padding-left: 24px; position: relative; }
+    .kpis li::before {
+      content: ""; position: absolute; left: 0; top: .58em; width: 8px; height: 8px;
+      background: linear-gradient(45deg, var(--brand), var(--accent));
+      border-radius: 2px;
+    }
+
+    .role, .tech { margin: 10px 0 0; }
+    .role h3, .tech h3 { font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+    .role ul { margin: 0; padding: 0 0 0 18px; }
+    .role li { margin: 6px 0; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { background: var(--chip); border: 1px solid var(--stroke); color: var(--text); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+
+    .linkrow { margin-top: 14px; }
+    .alink { color: var(--brand); text-decoration: none; border-bottom: 1px dashed rgba(97,218,251,.45); }
+    .alink:hover { border-bottom-color: var(--brand); }
+
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">온라인몰개발팀 · 종이책 전시</div>
+      <h1>웰컴 · 이벤트 · 마이페이지 – 경력 하이라이트</h1>
+      <p class="subtitle">바로펀딩 구축/고도화, 전시 서비스 운영·최적화, 이벤트/프로모션 개발, 마이페이지 고도화</p>
+    </header>
+
+    <section class="grid">
+      <!-- 바로펀딩 -->
+      <article class="card">
+        <h2>바로펀딩 구축 및 고도화</h2>
+        <div class="period">2024.07 ~ 2025.05</div>
+        <ul class="kpis">
+          <li>2024.09.23 오픈 이후 프로젝트 <strong>59건 진행</strong></li>
+          <li>영업 목표(20건) 대비 <strong>295% 초과</strong>, 매출 목표(2억 원) 대비 <strong>204% 달성(4억 800만 원)</strong></li>
+          <li>바로펀딩 스쿼드 파트 리더 <strong>‘올해의 교보인’ 수상</strong></li>
+          <li>IT본부 기술 세미나 발표 <strong>2위</strong></li>
+          <li>도서/라이프 매출 균형 달성 (도서 53.6% · 라이프 46.4%)</li>
+        </ul>
+        <div class="role">
+          <h3>역할</h3>
+          <ul>
+            <li>펀딩 플랫폼 신규 구축(Front/Back Office, 배치, 알림/리워드)</li>
+            <li>프로젝트 상태 변경/리워드 지급 자동화 배치 개발</li>
+            <li>API 스펙·데이터 구조 설계, 운영 인력 온보딩 가이드 작성</li>
+            <li>고도화: 배송조건 노출, 다중 옵션 일괄 결제, 물류 API, 관리도구 개선</li>
+            <li>쿼리 튜닝/로직 개선/인덱스 추가 → 목록 로딩 <strong>571ms → 0.144ms</strong></li>
+          </ul>
+        </div>
+        <div class="tech">
+          <h3>기술</h3>
+          <div class="chips">
+            <span class="chip">Java 17</span><span class="chip">Spring Boot</span><span class="chip">Redis</span>
+            <span class="chip">JPA</span><span class="chip">Async</span><span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="linkrow"><a class="alink" href="https://event.kyobobook.co.kr/funding" target="_blank" rel="noopener">바로가기</a></div>
+      </article>
+
+      <!-- 전시 서비스 운영/최적화 -->
+      <article class="card">
+        <h2>온라인몰 전시 서비스 운영 및 성능 최적화</h2>
+        <div class="period">2024.07 ~ 2025.05</div>
+        <ul class="kpis">
+          <li><strong>ISMS 인증</strong> 취득으로 보안 신뢰도 강화</li>
+          <li>API/DB 최적화로 <strong>서비스 성능 대폭 향상</strong></li>
+          <li>안정성 제고 및 UX 개선 기여</li>
+        </ul>
+        <div class="role">
+          <h3>역할</h3>
+          <ul>
+            <li>ISMS 대응 개발, XSS 방어/파라미터 필터링 등 보안 취약점 개선</li>
+            <li>베스트셀러 Redis Cache 도입, 리팩토링으로 API 로직/속도 개선</li>
+            <li>Java 8 → 17, Gradle 업그레이드 등 최신 스택 전환</li>
+            <li>품질 개선: 오류 수정, UI 개선, DB 최적화</li>
+            <li>FeignClient 도입, JPA+QueryDSL 적용, MongoDB 이력 저장</li>
+          </ul>
+        </div>
+        <div class="tech">
+          <h3>기술</h3>
+          <div class="chips">
+            <span class="chip">Java 17</span><span class="chip">Spring Boot</span>
+            <span class="chip">Redis</span><span class="chip">JPA</span>
+            <span class="chip">QueryDSL</span><span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="linkrow"><a class="alink" href="https://www.kyobobook.co.kr/" target="_blank" rel="noopener">바로가기</a></div>
+      </article>
+
+      <!-- 이벤트/프로모션 -->
+      <article class="card">
+        <h2>이벤트 · 프로모션 서비스 개발</h2>
+        <div class="period">2024.07 ~ 2025.05</div>
+        <ul class="kpis">
+          <li>대규모 프로모션/CRM 마케팅 지원 → <strong>매출 확대·유입 증대</strong></li>
+          <li>전시 최적화·캐싱 도입으로 <strong>페이지 로딩 속도 개선</strong></li>
+        </ul>
+        <div class="role">
+          <h3>역할</h3>
+          <ul>
+            <li>신간 캘린더, 웰컴, 성수기/연말, 책의 날 등 기획전 개발</li>
+            <li>CRM 기반 마케팅 페이지/프로모션 지원 기능 개발</li>
+            <li>이벤트 페이지 성능 개선 및 자동화 구축</li>
+          </ul>
+        </div>
+        <div class="tech">
+          <h3>기술</h3>
+          <div class="chips">
+            <span class="chip">Java</span><span class="chip">Spring Boot</span>
+            <span class="chip">Redis</span><span class="chip">JPA</span>
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="linkrow"><a class="alink" href="https://event.kyobobook.co.kr/" target="_blank" rel="noopener">바로가기</a></div>
+      </article>
+
+      <!-- 마이페이지 고도화 -->
+      <article class="card">
+        <h2>마이페이지 서비스 고도화</h2>
+        <div class="period">2024.07 ~ 2025.05</div>
+        <ul class="kpis">
+          <li>UX 개선으로 만족도·충성도 향상</li>
+          <li>오류 해결·기능 개선으로 품질 안정화</li>
+          <li>앱 전환 배너/노티 최적화로 <strong>마케팅 효율 증대</strong></li>
+        </ul>
+        <div class="role">
+          <h3>역할</h3>
+          <ul>
+            <li>알림함, 리뷰, 프로필, 라이브러리 기능 개선</li>
+            <li>찜/좋아요/리스트 관리 리팩토링</li>
+            <li>CRM 기반 알림/푸시 개선 및 UX 향상</li>
+            <li>찜 조회 API 리팩토링 (MyBatis → JPA+QueryDSL), FeignClient 도입</li>
+          </ul>
+        </div>
+        <div class="tech">
+          <h3>기술</h3>
+          <div class="chips">
+            <span class="chip">Java</span><span class="chip">Spring Boot</span>
+            <span class="chip">Redis</span><span class="chip">JPA</span>
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="linkrow"><a class="alink" href="https://my.kyobobook.co.kr/main" target="_blank" rel="noopener">바로가기</a></div>
+      </article>
+    </section>
+
+    <footer>
+      © 온라인몰개발팀 · 경력 기술서
+    </footer>
+  </div>
+</body>
+</html>
